@@ -1,0 +1,10 @@
+# Browser support configuration
+# Supports all modern browsers and IE11
+
+> 0.5%
+last 2 versions
+Firefox ESR
+not dead
+not op_mini all
+IE 11
+

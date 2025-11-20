@@ -1,0 +1,32 @@
+.cute-star {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cute-star-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.cute-star-shape {
+  transform-origin: 25px 25px;
+  animation: cute-star-spin 2s linear infinite;
+}
+
+@keyframes cute-star-spin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+

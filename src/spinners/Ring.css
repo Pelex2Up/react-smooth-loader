@@ -1,0 +1,51 @@
+.cute-ring {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cute-ring > div {
+  position: absolute;
+  border: 3px solid;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: cute-ring-spin 1.2s linear infinite;
+}
+
+.cute-ring > div:nth-child(1) {
+  width: 48px;
+  height: 48px;
+  animation-delay: -0.45s;
+}
+
+.cute-ring > div:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  animation-delay: -0.3s;
+}
+
+.cute-ring > div:nth-child(3) {
+  width: 32px;
+  height: 32px;
+  animation-delay: -0.15s;
+}
+
+.cute-ring > div:nth-child(4) {
+  width: 24px;
+  height: 24px;
+  animation-delay: 0s;
+}
+
+@keyframes cute-ring-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

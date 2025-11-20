@@ -1,0 +1,36 @@
+.cute-liquid {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cute-liquid-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.cute-liquid-wave {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: cute-liquid-wave 2s ease-in-out infinite;
+}
+
+@keyframes cute-liquid-wave {
+  0% {
+    stroke-dashoffset: 50;
+    transform: translateY(0);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    stroke-dashoffset: -50;
+    transform: translateY(0);
+  }
+}
+

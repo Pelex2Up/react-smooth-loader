@@ -1,0 +1,33 @@
+.cute-pulse {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cute-pulse > div {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 1;
+  animation: cute-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.cute-pulse > div:nth-child(2) {
+  animation-delay: -1s;
+}
+
+@keyframes cute-pulse {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+

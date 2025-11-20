@@ -1,0 +1,59 @@
+.cute-particle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cute-particle-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.cute-particle-dot {
+  transform-origin: 25px 25px;
+  animation: cute-particle-orbit 2s linear infinite;
+}
+
+.cute-particle-dot-1 {
+  animation-delay: 0s;
+}
+
+.cute-particle-dot-2 {
+  animation-delay: -0.33s;
+}
+
+.cute-particle-dot-3 {
+  animation-delay: -0.66s;
+}
+
+.cute-particle-dot-4 {
+  animation-delay: -1s;
+}
+
+.cute-particle-dot-5 {
+  animation-delay: -1.33s;
+}
+
+.cute-particle-dot-6 {
+  animation-delay: -1.66s;
+}
+
+@keyframes cute-particle-orbit {
+  0% {
+    transform: rotate(0deg) translateX(15px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) translateX(15px) rotate(-180deg) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg) translateX(15px) rotate(-360deg) scale(1);
+    opacity: 1;
+  }
+}
+

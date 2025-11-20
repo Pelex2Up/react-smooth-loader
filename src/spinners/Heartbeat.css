@@ -1,0 +1,36 @@
+.cute-heartbeat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cute-heartbeat-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 30px;
+}
+
+.cute-heartbeat-line {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: cute-heartbeat-pulse 2s linear infinite;
+}
+
+@keyframes cute-heartbeat-pulse {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+

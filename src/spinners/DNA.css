@@ -1,0 +1,59 @@
+.cute-dna {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cute-dna-svg {
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.cute-dna-strand {
+  stroke-dasharray: 10 5;
+  stroke-dashoffset: 0;
+  animation: cute-dna-move 2s linear infinite;
+}
+
+.cute-dna-strand-2 {
+  animation-direction: reverse;
+}
+
+.cute-dna-bond {
+  stroke-dasharray: 5 5;
+  stroke-dashoffset: 0;
+  animation: cute-dna-bond-pulse 1s ease-in-out infinite;
+}
+
+.cute-dna-bond-delayed {
+  animation-delay: 0.33s;
+}
+
+.cute-dna-bond-delayed-2 {
+  animation-delay: 0.66s;
+}
+
+@keyframes cute-dna-move {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 15;
+  }
+}
+
+@keyframes cute-dna-bond-pulse {
+  0%, 100% {
+    opacity: 1;
+    stroke-width: 2;
+  }
+  50% {
+    opacity: 0.4;
+    stroke-width: 1.5;
+  }
+}
+
