@@ -6,4 +6,5 @@ dist
 .vscode
 *.tsbuildinfo
 .cache
+PUBLISH_CHECKLIST.md
 
