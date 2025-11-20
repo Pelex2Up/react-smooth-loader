@@ -1,3 +1,3 @@
-export { SmoothLoader } from './CuteLoader';
+export { SmoothLoader } from './SmoothLoader';
 export type { SmoothLoaderProps, LoaderType } from './types';
 
